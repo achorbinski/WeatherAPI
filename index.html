@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+        <link rel="stylesheet" href="main.css" type="text/css" />
+    </head>
+    <body>
+        <nav>
+            <div id="search">
+                <input type="text" id="query" value="Zip Code"/>
+                <button id="getdata">Weatherize Me!</button>
+            </div>
+        </nav>
+        <div id="map2">
+            <div id="info">
+                <div class="center">
+                    <div id=location>
+                        <div id="centerlocation">
+                            <p id="results" class="large">City, State</p>
+                            <p id="zipcode" class="small">Zipcode</p>
+                        </div>
+                    </div>
+                    <div id="temp">
+                        <img id="weathericon" src="WeatherIconz/sleet@3x.png">
+                        <div id="degrees">
+                            <p id="hightemp" class="small">X</p>
+                            <p id="lowtemp" class="small">X</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        
+        <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

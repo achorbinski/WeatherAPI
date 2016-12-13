@@ -1,0 +1,93 @@
+html {
+    font-family: helvetica;
+}
+
+nav {
+    height: 40px;
+    background-color: gray;
+}
+
+#search {
+    float: right;
+    position: relative;
+    top:25%;
+    margin-right: 10px;
+}
+
+#map2 {
+    height:500px;
+}
+
+#info {
+    width: 100%;
+    height: 100px;
+
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    margin: auto;
+}
+
+.center {
+    width:450px;
+    margin: 0 auto;
+
+}
+
+#centerlocation {
+    height: 50px;
+    width: inherit;
+    margin: 10%;
+}
+    
+#location {
+    height: inherit;
+    padding-right: 30px;
+    border-right: solid 1px;
+    border-color: black;
+    float: left;
+    clear: both;
+}
+
+
+#temp {
+    margin-left: 30px;
+    float: left;
+}
+
+#degrees, img {
+    float: left;
+    padding: 15px;
+    margin: auto;
+    max-height: 75px;
+}
+
+#degrees :nth-child(odd) {
+    border-bottom: solid 1px;
+}
+
+.small {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+#location p {
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+#temp p {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.large {
+    font-size: 30px;
+}
+
+#map {
+    height: 180px;
+}
