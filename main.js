@@ -7,7 +7,7 @@ var resultsLowTemp = document.getElementById("lowtemp");
 var icon = document.getElementById("weathericon");
 
 
-var map = L.map('map').setView([45.601140, -122.801056], 3);
+var map = L.map('map').setView([45.601140, -122.801056], 13);
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -43,11 +43,29 @@ button.addEventListener("click", function(){
         resultsLowTemp.innerHTML = htmlStringLowTemp;
         zipcode.innerHTML = input.value;
         
-        if(htmlStringIconKey === "Overcast") {
+
+        
+        switch (htmlStringIconKey) {
+          case "Rainy":
             icon.src = "WeatherIconz/lightrain.png"
-        } else {icon.src = "WeatherIconz/thunderstorms.png"
-            
-        };
+            break;
+          case "Cloudy":
+            icon.src = "WeatherIconz/cloudy.png"
+            break;
+          case "Snow":
+            icon.src = "WeatherIconz/snow.png"
+            break;
+          case "Partly Cloudy":
+            icon.src = "WeatherIconz/partlycloudy.png"
+            break;
+          case "Sunny":
+              icon.src = "WeatherIconz/sunny.png"
+          case "Thunderstorm":
+            icon.src = "WeatherIconz/thunderstorms.png"
+            break;
+          default:
+            icon.src = "WeatherIconz/default.png"
+        }
     };
 });
 
